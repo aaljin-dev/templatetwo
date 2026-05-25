@@ -2,5 +2,20 @@
 
 @font-face {
   font-family: "Space Grotesk";
-  src: url("./assets/Font/Space Grotesk");
+  src: url("./assets/Font/SpaceGrotesk-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "M PLUS Rounded 1c";
+  src: url("./assets/Font/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@theme {
+  --font-hfont: "Space Grotesk", sans-serif;
+  --font-pbase: "M PLUS Rounded 1c", sans-serif;
+}
+@layer utilities {
+  .borderr {
+    border: 3px solid red;
+  }
 }

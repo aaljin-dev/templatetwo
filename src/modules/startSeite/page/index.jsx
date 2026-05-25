@@ -1,9 +1,9 @@
-import BaseOne from "../components/BaseOne";
+import EntDecken from "../components/EntDecken";
 
 const Startseite = () => {
   return (
     <>
-      <BaseOne />
+      <EntDecken />
     </>
   );
 };

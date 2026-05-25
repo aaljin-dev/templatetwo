@@ -1,9 +1,4 @@
-import Basetwo from "../components/Basetwo";
-
 const Region = () => {
-  return (
-    <>
-      <Basetwo />
-    </>
-  );
+  return <></>;
 };
+export default Region;

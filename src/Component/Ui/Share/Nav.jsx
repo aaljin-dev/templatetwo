@@ -43,7 +43,7 @@ const Nav = () => {
   return (
     <nav>
       <div className="w-full text-gray-500 h-45 flex justify-between items-center py-3 pl-5 pr-10  border">
-        <ul className="flex gap-4 text-xl font-Space Grotesk">
+        <ul className="flex gap-4 text-xl font-hfont">
           {NAV_MENU.map((item) => {
             return (
               <li key={item.id}>
