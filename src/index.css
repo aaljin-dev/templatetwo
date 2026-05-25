@@ -9,10 +9,15 @@
   font-family: "M PLUS Rounded 1c";
   src: url("./assets/Font/MPLUSRounded1c-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/Font/Nunito-Regular.ttf");
+}
 
 @theme {
   --font-hfont: "Space Grotesk", sans-serif;
   --font-pbase: "M PLUS Rounded 1c", sans-serif;
+  --font-Nunito: "Nunito";
 }
 @layer utilities {
   .borderr {

@@ -1,58 +1,50 @@
 import React from "react";
 
-const Base = ({
-  lineOne,
-  lineTwo,
-  lineThree,
-  bannnerone,
-  banner1,
-  banner2,
-  banner3,
-}) => {
+const Base = ({ baseOne }) => {
   return (
     <div className="h-[95vh]">
       <div
-        style={{ backgroundImage: `url(${bannnerone})` }}
+        style={{ backgroundImage: `url(${baseOne.img[3]})` }}
         className="w-full h-full bg-[#6FBCC5] bg-cover bg-center bg-blend-multiply"
       >
-        <div className="border-4 border-red-500 flex h-full justify-start items-center gap-30 pl-[50px] ">
+        <div className=" flex h-full justify-start items-center gap-30 pl-[50px] ">
           {/* left side */}
-          <div className="font-pbase text-8xl borderr text-white ">
+          <div className="font-pbase text-white ">
             <div>
-              <div
-                className="bg-[#5DB5BB] inline-block mb-3 font-black tracking-widest"
+              <h1
+                className="bg-[#39aeb6] inline-block  font-black tracking-[20px] text-[125px] leading-35 mb-4 pl-5"
+                style={{
+                  WebkitTextStroke: "7px white",
+                }}
+              >
+                {baseOne.lineOne}
+              </h1>
+            </div>
+            <div>
+              <h1
+                className="bg-amber-500 inline-block mb-9 font-[950] tracking-[20px] text-[125px] leading-35 pl-5"
                 style={{
                   WebkitTextStroke: "5px white",
                 }}
               >
-                {lineOne}
-              </div>
+                {baseOne.linetwo}
+              </h1>
             </div>
-            <div>
-              <div
-                className="bg-amber-500 inline-block mb-9 font-[950] tracking-widest"
-                style={{
-                  WebkitTextStroke: "5px white",
-                }}
-              >
-                {lineTwo}
-              </div>
-            </div>
-            <div className="ml-7 text-5xl">
-              <div className="text-5xl">{lineThree}</div>
+            <div className="ml-15 text-5xl">
+              <h2 className="text-6xl">{baseOne.linethree}</h2>
             </div>
           </div>
           <div>
             {/* right side */}
-            <div className="flex gap-8 w-[600px] borderr justify-center">
+            <div className="flex gap-8 w-[600px]  justify-center">
               <div className="w-[21%]">
-                <img src={banner1} alt="" />
+                <img src={baseOne.img[0]} alt="" />
               </div>
               <div className="w-[21%]">
-                <img src={banner2} alt="" />
+                <img src={baseOne.img[1]} alt="" />
               </div>
               <div className="w-[21%]">
-                <img src={banner3} alt="" />
+                <img src={baseOne.img[2]} alt="" />
               </div>
             </div>
           </div>
