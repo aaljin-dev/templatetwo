@@ -3,8 +3,6 @@ import { FaChevronRight } from "react-icons/fa";
 import { AktuelleData } from "../../../mock";
 
 const Aktuelle = () => {
-  console.log(AktuelleData);
-
   return (
     <div>
       <div>

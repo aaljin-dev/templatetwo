@@ -1,5 +1,8 @@
 import React from "react";
+import { NeuesData } from "../../../mock";
+
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./Neues.css";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -21,7 +24,7 @@ const Neues = () => {
         <h1>Neues aus der Region</h1>
       </div>
 
-      <div className="w-full h-[520px] borderr">
+      <div className="w-full h-[520px] ">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
@@ -32,32 +35,33 @@ const Neues = () => {
           //   scrollbar={{ draggable: true }}
           className="h-full w-[98%]"
         >
-          <SwiperSlide className="h-full ">
-            <div className="w-[80%] h-full mx-auto flex items-center justify-center gap-13 border border-green-600">
-              <div className="borderr w-[50%] h-60">
-                <img
-                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-                  alt=""
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-              <div className="w-[40%] borderr">
-                <h1 className="text-2xl pb-6">Wanderung Oben an der Volme</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adi- piscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                  natoque penatibus et magnis dis parturient montes, nascetur
-                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                  eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                  pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                  In enim justo, rhoncus ut,
-                </p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+          {NeuesData.map((items) => {
+            return (
+              <SwiperSlide className="h-full ">
+                <div
+                  key={items.id}
+                  className="w-[80%] h-full mx-auto flex items-center justify-center gap-13"
+                >
+                  <div className=" w-[50%] h-80">
+                    <img
+                      src={items.img}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="w-[40%] h-72">
+                    <h1
+                      className="text-2xl pb-6 text-gray-400"
+                      style={{ WebkitTextStroke: "1px" }}
+                    >
+                      {items.head}
+                    </h1>
+                    <p className="text-gray-500 text-xl">{items.para}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </div>

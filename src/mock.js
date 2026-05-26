@@ -1,4 +1,5 @@
 import { FaChevronRight } from "react-icons/fa";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 import bannnerOneImage from "./assets/images/Slider-scaled.jpg";
 import bannerImageOne from "./assets/images/banner1.png";
@@ -8,6 +9,10 @@ import bannerImageThree from "./assets/images/banner3.png";
 import KeinKind from "./assets/images/Kein-Kind.jpg";
 import keinKindtwo from "./assets/images/one2.png";
 import Notfalldosen from "./assets/images/Notfalldosen.jpg";
+
+import neuseImg from "./assets/images/Freizeit-und-Naherholungsbeauftragter_Bild-3.jpg";
+
+import dieImg from "./assets/images/Nachhaltig-mobil.jpg";
 
 export const baseOne = {
   lineOne: "DEINE",
@@ -48,3 +53,56 @@ export const AktuelleData = [
     colback: "#9369aa",
   },
 ];
+
+export const NeuesData = [
+  {
+    id: 1,
+    img: neuseImg,
+    head: "Wanderung Oben an der Volme",
+    para: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,",
+  },
+  {
+    id: 2,
+    img: neuseImg,
+    head: "Wanderung Oben an der Volme",
+    para: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,",
+  },
+  {
+    id: 3,
+    img: neuseImg,
+    head: "Wanderung Oben an der Volme",
+    para: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,",
+  },
+  {
+    id: 4,
+    img: neuseImg,
+    head: "Wanderung Oben an der Volme",
+    para: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,",
+  },
+];
+
+export const dieData = {
+  head: "Die nächsten Termin",
+  img: dieImg,
+  subHead: [
+    {
+      id: 1,
+      headOne: "1. August - 13. September 2019",
+      headParaOne:
+        "Projektaufrufrunde vom 1. August bis zum 13. September 2019",
+      headParaTwo:
+        "Damit Projekte durch die Lokale Aktionsgruppe beschlossen werden können,müssen Projektträger ihre Ideen innerhalb der Projektaufrufrunde einreichen",
+      headParathree: "mehr",
+      Icon: MdKeyboardArrowRight,
+    },
+    {
+      id: 2,
+      headOne: "08. Oktober 2019",
+      headParaOne: "Sitzung der Lokalen Aktionsgruppe",
+      headParaTwo:
+        "am 08.10.2019, auf der beschlossen wird, welche Projekte im Rahmen von",
+      headParathree: "mehr",
+      Icon: MdKeyboardArrowRight,
+    },
+  ],
+};
