@@ -30,9 +30,31 @@ const Neues = () => {
           navigation
           pagination={{ clickable: true }}
           //   scrollbar={{ draggable: true }}
-          className="h-full "
+          className="h-full w-[98%]"
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide className="h-full ">
+            <div className="w-[80%] h-full mx-auto flex items-center justify-center gap-13 border border-green-600">
+              <div className="borderr w-[50%] h-60">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+                  alt=""
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div className="w-[40%] borderr">
+                <h1 className="text-2xl pb-6">Wanderung Oben an der Volme</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adi- piscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                  eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
+                  pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                  In enim justo, rhoncus ut,
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
           <SwiperSlide>Slide 3</SwiperSlide>
           <SwiperSlide>Slide 4</SwiperSlide>
