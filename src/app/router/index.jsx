@@ -23,4 +23,14 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/region-ziele",
+    element: <MainLayout />,
+    children: [
+      {
+        index: true,
+        element: <Base baseOne={baseOne} />,
+      },
+    ],
+  },
 ]);

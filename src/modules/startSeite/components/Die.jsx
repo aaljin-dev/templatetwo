@@ -11,7 +11,9 @@ const Die = () => {
         }}
       >
         <div className="text-white h-full w-[50%] mx-auto  ">
-          <h1 className="text-center text-4xl mt-15 mb-15">{dieData.head}</h1>
+          <h1 className="text-center text-4xl mt-10 mb-15 pt-20">
+            {dieData.head}
+          </h1>
           {dieData.subHead.map((items) => {
             const Icon = items.Icon;
             return (

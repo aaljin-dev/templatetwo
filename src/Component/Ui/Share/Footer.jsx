@@ -1,50 +1,16 @@
 import React from "react";
+import { footerOne } from "../../../mock";
 
 const Footer = () => {
   return (
-    <div className="h-50 borderr flex justify-center gap-5 items-center">
-      <div className="w-37 h-25">
-        <img
-          className="w-full h-full"
-          src={`${"https://images.unsplash.com/photo-1506744038136-46273834b3fb"}`}
-          alt=""
-        />
-      </div>
-      <div className="w-37 h-25">
-        <img
-          className="w-full h-full"
-          src={`${"https://images.unsplash.com/photo-1506744038136-46273834b3fb"}`}
-          alt=""
-        />
-      </div>
-      <div className="w-37 h-25">
-        <img
-          className="w-full h-full"
-          src={`${"https://images.unsplash.com/photo-1506744038136-46273834b3fb"}`}
-          alt=""
-        />
-      </div>
-      <div className="w-37 h-25">
-        <img
-          className="w-full h-full"
-          src={`${"https://images.unsplash.com/photo-1506744038136-46273834b3fb"}`}
-          alt=""
-        />
-      </div>
-      <div className="w-37 h-25">
-        <img
-          className="w-full h-full"
-          src={`${"https://images.unsplash.com/photo-1506744038136-46273834b3fb"}`}
-          alt=""
-        />
-      </div>
-      <div className="w-37 h-25">
-        <img
-          className="w-full h-full"
-          src={`${"https://images.unsplash.com/photo-1506744038136-46273834b3fb"}`}
-          alt=""
-        />
-      </div>
+    <div className="h-50 flex justify-center gap-5 items-center bg-[#e5e5e5]">
+      {footerOne.map((item) => {
+        return (
+          <div key={item.id} className="w-37 h-25">
+            <img className="w-full h-full" src={`${item.img}`} alt="" />
+          </div>
+        );
+      })}
     </div>
   );
 };

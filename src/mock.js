@@ -14,6 +14,12 @@ import neuseImg from "./assets/images/Freizeit-und-Naherholungsbeauftragter_Bild
 
 import dieImg from "./assets/images/Nachhaltig-mobil.jpg";
 
+import footer1 from "./assets/images/footer1.png";
+import footer2 from "./assets/images/footer3.png";
+import footer3 from "./assets/images/footer4.png";
+import footer4 from "./assets/images/footer5.png";
+import footer5 from "./assets/images/footer6.png";
+
 export const baseOne = {
   lineOne: "DEINE",
   linetwo: "REGION",
@@ -106,3 +112,23 @@ export const dieData = {
     },
   ],
 };
+
+export const footerOne = [
+  {
+    id: 1,
+    img: footer1,
+  },
+  { id: 2, img: footer2 },
+  {
+    id: 3,
+    img: footer3,
+  },
+  {
+    id: 4,
+    img: footer4,
+  },
+  {
+    id: 5,
+    img: footer5,
+  },
+];
