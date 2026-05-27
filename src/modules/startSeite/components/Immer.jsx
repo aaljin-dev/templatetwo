@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Immer = () => {
   return (
-    <div className="h-28 w-full flex items-center justify-between px-25 bg-[#d1d1d1]">
+    <div className="h-28 w-full flex items-center justify-between px-25 bg-[#d1d1d1] ">
       <div className="flex gap-5">
         <p className="w-13 h-13  rounded-full">
           <RiLinkedinFill className="w-full h-full  rounded-full p-1 bg-gray-500 text-gray-300" />

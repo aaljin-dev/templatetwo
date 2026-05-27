@@ -20,10 +20,17 @@ import footer3 from "./assets/images/footer4.png";
 import footer4 from "./assets/images/footer5.png";
 import footer5 from "./assets/images/footer6.png";
 
+import wappenHalver from "./assets/images/Wappen-Halver (1).png";
+import wappenHersche from "./assets/images/Wappen-Herscheid.png";
+import wappenMeinez from "./assets/images/Wappen-Meinerzhagen.png";
+import wappenSchalks from "./assets/images/Wappen-Schalksmuhle1.png";
+import websiteDeine from "./assets/images/Website_deine_region_V2-94.png";
+
 export const baseOne = {
   lineOne: "DEINE",
   linetwo: "REGION",
   linethree: "OBEN AN DER VOLME",
+  backgroundImg: bannnerOneImage,
   img: [bannerImageOne, bannerImageTwo, bannerImageThree, bannnerOneImage],
 };
 
@@ -132,3 +139,58 @@ export const footerOne = [
     img: footer5,
   },
 ];
+
+export const baseTwo = {
+  lineOne: "DEINE",
+  linetwo: "REGION",
+  backgroundImg: bannnerOneImage,
+};
+
+export const obenData = {
+  head: "Oben an der Volme",
+  logo: [
+    {
+      id: 1,
+      img: wappenHalver,
+      name: "KIERSPE ›",
+    },
+    {
+      id: 2,
+      img: wappenHersche,
+      name: "MEINERZHAGEN ›",
+    },
+    {
+      id: 3,
+      img: wappenMeinez,
+      name: "SCHALKSMÜHLE ›",
+    },
+    {
+      id: 4,
+      img: wappenSchalks,
+      name: "HERSCHEID ›",
+    },
+    {
+      id: 5,
+      img: websiteDeine,
+      name: "HALVER ›",
+    },
+  ],
+  para: [
+    {
+      id: 1,
+      text: "Die Zusammenarbeit der fünf Kommunen hat ihren Ursprung im Jahr 2009 Oben an der VolmeMEINERZHAGEN ›KIERSPE ›HERSCHEID ›durch die „REGIONALE 2013“ in Südwestfalen. In diesem Zuge hatten sich die vier an der Volme liegenden Kommunen Meinerzhagen, Kierspe, Halver und Schalksmühle zusammengeschlossen, um gemeinsam ihre Region – und hierbei vor allem die Zentren– mit Hilfe städtebaulicher Projekte weiterzuentwickeln.",
+    },
+    {
+      id: 2,
+      text: "Um thematisch vielseitigere, aber auch kleinere Projekte in die gesamte Fläche zu bringen, bewarben sich die vier Kommunen im Jahr 2015 um das Förderprogramm LEADER. Mit Erfolg: Seit 2016 ist Oben an der Volme offi ziell LEADER-Region, wodurch Projekte in den Bereichen Stadt- und Dorfentwicklung, Tourismus, Wirtschaft und „starke Kinder“ mit Hilfe von 2,3 Mio. € Fördermitteln realisiert werden können.",
+    },
+    {
+      id: 3,
+      text: "Und nun steht schon das nächste gemeinsame Vorhaben an: Nachdem die letzten städtebaulichen Projekte aus der REGIONALE 2013 noch umgesetzt werden, ist bereits der Startschuss für die REGIONALE 2025 gefallen, bei der vor allem digitale Lösungen z.B. in den Bereichen Mobilität, Gesundheit, Bildung oder Tourismus für die Zukunftsgestaltung gesucht werden. ",
+    },
+    {
+      id: 4,
+      text: "Diese Chance wollen sich die Oben an der Volme-Kommunen natürlich nicht entgehen lassen! Sie werden wieder eine gemeinsame Bewerbung einreichen – und das natürlich mit breiter Mitwirkung aller Bürgerinnen und Bürger! Die Ideenwerkstätten dazu waren ein großer Erfolg. Dieses Mal ist auch die Gemeinde Herscheid mit von der Partie, die sich fortan an dem Zusammenschluss „Oben an der Volme“ beteiligt.",
+    },
+  ],
+};

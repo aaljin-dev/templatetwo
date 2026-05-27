@@ -8,6 +8,8 @@ const Die = () => {
         className="w-full h-full bg-cover bg-center"
         style={{
           backgroundImage: `url(${dieData.img})`,
+          backgroundColor: "#30b6bb",
+          backgroundBlendMode: "multiply",
         }}
       >
         <div className="text-white h-full w-[50%] mx-auto  ">

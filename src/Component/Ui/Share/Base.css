@@ -1,0 +1,9 @@
+.title {
+  -webkit-text-stroke: 7px white;
+}
+
+@media (max-width: 768px) {
+  .title {
+    -webkit-text-stroke: 1px white;
+  }
+}

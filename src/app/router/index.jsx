@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { baseOne } from "../../mock";
+import { baseOne, baseTwo } from "../../mock";
 
 import Base from "../../Component/Ui/Share/Base";
 import MainLayout from "../../Component/Ui/Layout/MainLayout";
 import Startseite from "../../modules/startSeite/page";
 import Aktuelle from "../../modules/startSeite/components/Aktuelle";
+import Region from "../../modules/region/page";
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
         index: true,
         element: (
           <>
-            <Base baseOne={baseOne} />
+            <Base base={baseOne} />
             <Startseite />
           </>
         ),
@@ -29,7 +30,12 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Base baseOne={baseOne} />,
+        element: (
+          <>
+            <Base base={baseTwo} />
+            <Region />
+          </>
+        ),
       },
     ],
   },

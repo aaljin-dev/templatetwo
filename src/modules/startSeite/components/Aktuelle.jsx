@@ -6,11 +6,18 @@ const Aktuelle = () => {
   return (
     <div>
       <div>
-        <h1 className="text-5xl font-Nunito h-38 text-center text-gray-500 pt-15">
+        <h1
+          className="text-5xl font-Nunito min-h-38 text-center text-gray-500 pt-15
+        max-md:pt-5 max-md:min-h-20 borderr"
+        >
           Aktuelle Projekte
         </h1>
       </div>
-      <div className="w-full h-[600px] flex gap-3 px-10 mb-20">
+      <div
+        className="w-full min-h-[600px] flex gap-3  px-10 mb-20 borderr
+        max-md:flex-col
+      "
+      >
         {AktuelleData.map((items) => {
           const Icon = items.icon;
           return (
