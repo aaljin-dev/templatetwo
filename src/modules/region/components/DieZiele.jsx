@@ -30,24 +30,27 @@ const DieZiele = () => {
             const Icon = item.icon;
             return (
               <div
-                className="flex  text-white px-20 py-10 h-55 gap-10 font-Nunito"
+                className="flex max-md:flex-col  text-white max-md:px-5 px-20 py-10 min-h-55 gap-10 
+                font-Nunito "
                 key={item.id}
                 style={{ backgroundColor: item.bg }}
               >
-                <div className=" w-45 h-25 mt-5">
-                  <img
-                    className="w-full h-full object-contain"
-                    src={item.img}
-                    alt=""
-                  />
+                <div className="flex ">
+                  <div className=" w-45 h-25 mt-5 max-md:pr-8">
+                    <img
+                      className="w-full h-full object-contain"
+                      src={item.img}
+                      alt=""
+                    />
+                  </div>
+                  <h1 className=" w-[450px]  text-5xl flex justify-start items-center">
+                    {item.head}
+                  </h1>
+                  <div className=" max-md:hidden w-20 flex justify-end  items-center">
+                    <Icon className="text-6xl" />
+                  </div>
                 </div>
-                <h1 className=" w-[450px] text-5xl flex justify-start items-center">
-                  {item.head}
-                </h1>
-                <div className=" w-20 flex justify-end  items-center">
-                  <Icon className="text-6xl" />
-                </div>
-                <div className="w-[800px] pt-6">
+                <div className="w-[800px] max-md:w-[350px]  pt-6">
                   <p>{item.text}</p>
                 </div>
               </div>

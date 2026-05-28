@@ -4,6 +4,7 @@ import Die from "../components/Die";
 import EntDecken from "../components/EntDecken";
 import Immer from "../components/Immer";
 import Neues from "../components/Neues";
+import { footerOne } from "../../../mock";
 
 const Startseite = () => {
   return (
@@ -13,7 +14,7 @@ const Startseite = () => {
       <Neues />
       <Die />
       <Immer />
-      <Footer />
+      <Footer footerOne={footerOne} />
     </>
   );
 };

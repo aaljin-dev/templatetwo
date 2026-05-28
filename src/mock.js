@@ -1,5 +1,6 @@
 import { FaChevronRight } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { BiSolidLike } from "react-icons/bi";
 
 import bannnerOneImage from "./assets/images/Slider-scaled.jpg";
 import bannerImageOne from "./assets/images/banner1.png";
@@ -286,4 +287,28 @@ export const DerVerein = {
       text: "Zusätzlich umfasst der Verein verschiedene Aktionsgruppen, die sich speziell um ein bestimmtes Thema kümmern: Die Lokale Aktionsgruppe, die die Projektauswahl im LEADER-Prozess tri� t, sowie die Kultur- als auch die Tourismus-Aktionsgruppe, welche die kulturellen und touristischen Belange der Region im Fokus haben.",
     },
   ],
+};
+
+export const footerSecand = [
+  {
+    id: 1,
+    img: footer1,
+  },
+  { id: 2, img: footer2 },
+  {
+    id: 3,
+    img: footer3,
+  },
+  {
+    id: 4,
+    img: footer4,
+  },
+  {
+    id: 5,
+    img: footer5,
+  },
+];
+export const footerSecandNew = {
+  like: BiSolidLike,
+  text: "Getfalt mir 454",
 };
