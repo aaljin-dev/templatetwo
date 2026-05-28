@@ -3,7 +3,7 @@ import { dieData } from "../../../mock";
 
 const Die = () => {
   return (
-    <div className="w-full h-[100vh]">
+    <div className="w-full h-[100vh] max-md:h-[1000px]">
       <div
         className="w-full h-full bg-cover bg-center"
         style={{
@@ -12,7 +12,7 @@ const Die = () => {
           backgroundBlendMode: "multiply",
         }}
       >
-        <div className="text-white h-full w-[50%] mx-auto  ">
+        <div className="text-white h-full w-[50%] mx-auto  max-md:w-[90%]">
           <h1 className="text-center text-4xl mt-10 mb-15 pt-20">
             {dieData.head}
           </h1>
