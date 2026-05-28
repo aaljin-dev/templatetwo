@@ -1,33 +1,29 @@
 import React from "react";
 
+import { dieRegion } from "../../../mock";
+
 const Dieregion = () => {
   return (
-    <div>
-      <div className="grid grid-cols-12 gap-10 py-10 px-15  borderr">
-        <div className=" col-span-5">
+    <div className="">
+      <div className="flex justify-center items-center gap-10 pt-20 pb-10 px-15 max-md:px-0 max-md:flex-col">
+        <div className="w-[45%] md:w-[50%] max-md:w-[95%] max-h-[600px]">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg"
+            src={dieRegion.img}
             alt=""
+            className="h-full w-full object-cover "
           />
         </div>
-        <div className="col-span-5">
-          <h1>DIE REGION</h1>
-          <p>
-            n den fünf Kommunen leben rund 70.000 Menschen auf einer Ge- samtf
-            äche von 362 km². Die funktionalen Verfl echtungen bestehen in der
-            ähnlichen Wirtschaftsstruktur, der Historie der Industriekultur und
-            dem heute noch starken produzierenden Gewerbe, welches vor allem
-            durch eine Vielzahl an mittelständischen Unternehmen geprägt ist.
-            Die hiesigen Unternehmen tragen mit ihrem Erfolg entscheidend zur
-            Wirtschaftskraft Südwestfalens bei, welche die stärkste
-            Wirtschaftsregion des Landes NRW darstellt. Die Regon ist zudem
-            geprägt durch die Land- und Forstwirtschaft mit einem Schwerpunkt i
-            der Milchviehwirtschaft. Es bestehen strukturell-organisatorisc
-            Verknüpfungen wie ein ge- meinsames Kulturmanagement, eine
-            gemeinsame Volkshochschule, eine Musikschule und weitere Formen der
-            Zusammenarbeit, die zum Teil im Rahmen der REGIONALE 2013 gewachsen
-            sind, teilweise aber auch schon länger bestehen
-          </p>
+
+        <div className="w-[60%] min-h-[530px] max-md:w-[90%]">
+          <h1 className="bg-[#9369aa] text-[#fcc300] font-Nunito text-5xl inline py-5 pl-5 pr-10 max-md:text-2xl">
+            {dieRegion.head}
+          </h1>
+
+          <div className="mt-10 py-7 px-5 text-xl bg-[#93a6ba] text-[#f9fafb]">
+            <p>{dieRegion.paraOne}</p>
+
+            <p className="mt-5">{dieRegion.paraTwo}</p>
+          </div>
         </div>
       </div>
     </div>
