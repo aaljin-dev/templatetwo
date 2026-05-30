@@ -312,3 +312,115 @@ export const footerSecandNew = {
   like: BiSolidLike,
   text: "Getfalt mir 454",
 };
+
+export const baseThree = {
+  lineOne: "UNSERE",
+  linetwo: "PROJEKTE",
+  backgroundImg: bannnerOneImage,
+  lineOneCol: "#936aab",
+  linetwoCol: "#2fb8bd",
+};
+
+export const entDecken = {
+  head: "Entdecken Sie die Region Oben an der Volme!",
+  para: [
+    {
+      id: 1,
+      text: "„Werte schöpfen – gemeinsam Zukunft gestalten!“ – unter diesem Motto haben sich die fünf Kommunen Herscheid, Meinerzhagen, Kierspe, Halver und Schalksmühle im Märkischen Kreis zusammengeschlossen, um die Re- gion „Oben an der Volme“ aktiv zu gestalten.",
+    },
+    {
+      id: 2,
+      text: "Hierbei sind sie nicht allein: Zahlreiche Bürger, ehrenamtliche Initiativen, Vereine, Institutionen und Unternehmen setzen sich mit Kreativität, Fleiß und Leidenschaft für ihre Region ein.",
+    },
+    {
+      id: 3,
+      text: "Deutlich sichtbar wird dieses Engagement in den zahlreichen Projekten, die die Lebensqualität vor Ort entscheidend steigern und die wir Ihnen auf die- ser Homepage vorstellen möchten. Schauen Sie selbst!",
+    },
+  ],
+};
+
+export const lorem = {
+  head: "Lorem ipsum sit dolor",
+  para: [
+    {
+      id: 1,
+      text: "Die Zusammenarbeit der fünf Kommunen hat ihren Ursprung im Jahr 2009durch die „REGIONALE 2013“ in Südwestfalen. In diesem Zuge hatten sichdie vier an der Volme liegenden Kommunen Meinerzhagen, Kierspe, Halverund Schalksmühle zusammengeschlossen, um gemeinsam ihre Region –und hierbei vor allem die Zentren– mit Hilfe städtebaulicher Projekte weiterzuentwickeln. ",
+    },
+    {
+      id: 2,
+      text: "Um thematisch vielseitigere, aber auch kleinere Projekte in die gesamte Fläche zu bringen, bewarben sich die vier Kommunen im Jahr 2015 um dasFörderprogramm LEADER. Mit Erfolg: Seit 2016 ist Oben an der Volme of",
+    },
+  ],
+};
+
+export const projectData = {
+  headOne: "kommune",
+  headTwo: "foerderprogramm",
+  headThree: "handlungsfelder",
+
+  kommune: [
+    { kommune: "Halver" },
+    { kommune: "Schalksmühle" },
+    { kommune: "Herscheid" },
+    { kommune: "Kierspe" },
+    { kommune: "Meinerzhagen" },
+  ],
+
+  foerderprogramm: [
+    { foerderprogramm: "LEADER" },
+    { foerderprogramm: "REGIONALE 2025" },
+    { foerderprogramm: "EFRE NRW" },
+    { foerderprogramm: "Dorferneuerung" },
+  ],
+
+  handlungsfelder: [
+    { handlungsfeld: "Starke Kinder-starke Region" },
+    { handlungsfeld: "Nachhaltiger Wirtschaftsstandort" },
+    { handlungsfeld: "Lebenswerte Städte und Dörfer" },
+  ],
+};
+
+export const freizeit = [
+  {
+    id: 1,
+    title: "Freizeit- und Naherholungsbeauftragter",
+    color: "#e6b800",
+    image:
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
+  },
+  {
+    id: 2,
+    title: "Kein Kind zurücklassen - von Anfang an!",
+    color: "#2fb8bd",
+    image:
+      "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1200",
+  },
+  {
+    id: 3,
+    title: "Notfalldosen Oben an der Volme",
+    color: "#936aab",
+    image:
+      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200",
+  },
+  {
+    id: 4,
+    title: "Naturerlebnis Volmetal",
+    color: "#e6b800",
+    image:
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200",
+  },
+  {
+    id: 5,
+    title: "Digitales Dorfzentrum",
+    color: "#2fb8bd",
+    image:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200",
+  },
+  {
+    id: 6,
+    title: "Nachhaltige Mobilität Volmetal",
+    color: "#936aab",
+    image:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200",
+  },
+];

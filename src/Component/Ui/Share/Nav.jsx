@@ -68,7 +68,14 @@ const Nav = () => {
               {NAV_MENU.map((item) => {
                 return (
                   <li key={item.id}>
-                    <Link to={item.path}>{item.key}</Link>
+                    <Link
+                      onClick={() => {
+                        setClick(!click);
+                      }}
+                      to={item.path}
+                    >
+                      {item.key}
+                    </Link>
                   </li>
                 );
               })}

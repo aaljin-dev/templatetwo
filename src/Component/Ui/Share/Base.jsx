@@ -13,7 +13,8 @@ const Base = ({ base }) => {
           <div className="font-pbase text-white ">
             <div>
               <h1
-                className="bg-[#39aeb6] inline-block  font-black tracking-[20px] text-[125px] leading-35 mb-4 pl-5 
+                style={{ backgroundColor: base.lineOneCol || "#39aeb6" }}
+                className=" inline-block  font-black tracking-[20px] text-[125px] leading-35 mb-4 pl-5 
               max-md:tracking-[1px] max-md:text-[50px] max-md:leading-20 title"
               >
                 {base.lineOne}
@@ -21,7 +22,8 @@ const Base = ({ base }) => {
             </div>
             <div>
               <h1
-                className="bg-amber-500 inline-block mb-9 font-[950] tracking-[20px] text-[125px] leading-35 pl-5
+                style={{ backgroundColor: base.lineTwoCol || "#fcc305" }}
+                className=" inline-block mb-9 font-[950] tracking-[20px] text-[125px] leading-35 pl-5
               max-md:tracking-[1px] max-md:text-[50px] max-md:leading-20 title"
               >
                 {base.linetwo}
