@@ -7,7 +7,7 @@ const Footer = ({ footerOne, footerSecandNew = null }) => {
   return (
     <div className="min-h-50 flex  justify-center gap-5 items-center bg-[#e5e5e5] max-md:flex-wrap">
       <div className={!footerSecandNew ? "hidden" : "h-30"}>
-        <p className="flex   mb-5  bg-blue-400">
+        <p className="flex max-md:mt-10  mb-5  bg-blue-400">
           {Icon && <Icon className="text-white fill-white text-xl" />}
 
           <span className="text-white text-sm">{footerSecandNew?.text}</span>

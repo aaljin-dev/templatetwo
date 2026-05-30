@@ -1,6 +1,8 @@
 import { FaChevronRight } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { BiSolidLike } from "react-icons/bi";
+import { FaAngleDown } from "react-icons/fa";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 import bannnerOneImage from "./assets/images/Slider-scaled.jpg";
 import bannerImageOne from "./assets/images/banner1.png";
@@ -34,6 +36,8 @@ import daslogo from "./assets/images/Logo_Umriss.png";
 import bannerfour from "./assets/images/banner4.png";
 
 import Nachhaltig from "./assets/images/Nachhaltig-mobil.jpg";
+
+import Seen from "./assets/images/Sauerland-Seen.jpg";
 
 export const baseOne = {
   lineOne: "DEINE",
@@ -380,47 +384,314 @@ export const projectData = {
   ],
 };
 
-export const freizeit = [
-  {
-    id: 1,
-    title: "Freizeit- und Naherholungsbeauftragter",
-    color: "#e6b800",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
+export const freizeit = {
+  data: [
+    {
+      id: 1,
+      title: "Freizeit- und Naherholungsbeauftragter",
+      titlebg: "#fcc300",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
+    },
+    {
+      id: 2,
+      title: "Kein Kind zurücklassen - von Anfang an!",
+      titlebg: "#31b7bc",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1200",
+    },
+    {
+      id: 3,
+      title: "Notfalldosen Oben an der Volme",
+      titlebg: "#9369aa",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200",
+    },
+    {
+      id: 4,
+      title: "Naturerlebnis Volmetal",
+      titlebg: "#fcc300",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200",
+    },
+    {
+      id: 5,
+      title: "Digitales Dorfzentrum",
+      titlebg: "#31b7bc",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200",
+    },
+    {
+      id: 6,
+      title: "Nachhaltige Mobilität Volmetal",
+      titlebg: "#9369aa",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200",
+    },
+  ],
+  dataIcon: FaAngleDown,
+};
+
+export const baseFour = {
+  lineOne: "UNSERE",
+  linetwo: "PROJEKTE",
+  backgroundImg: Seen,
+  lineOneCol: "#936aab",
+  linetwoCol: "#2fb8bd",
+};
+
+export const loremTwo = {
+  head: "Lorem ipsum sit dolor",
+  para: [
+    {
+      id: 1,
+      text: "Lorem ipsum sit dolordurch die „REGIONALE 2013“ in Südwestfalen. In diesem Zuge hatten sich die vier an der Volme liegenden Kommunen Meinerzhagen, Kierspe, Halver und Schalksmühle zusammengeschlossen, um gemeinsam ihre Region – und hierbei vor allem die Zentren– mit Hilfe städtebaulicher Projekte weiterzuentwickeln. ",
+    },
+    {
+      id: 2,
+      text: "Um thematisch vielseitigere, aber auch kleinere Projekte in die gesamte Fläche zu bringen, bewarben sich die vier Kommunen im Jahr 2015 um das Förderprogramm LEADER. Mit Erfolg: Seit 2016 ist Oben an der Volme of",
+    },
+  ],
+};
+
+export const Leaderfreizeit = {
+  data: [
+    {
+      id: 1,
+      title: "Freizeit- und Naherholungsbeauftragter",
+      titlebg: "#fcc300",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
+    },
+    {
+      id: 2,
+      title: "Kein Kind zurücklassen - von Anfang an!",
+      titlebg: "#31b7bc",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1200",
+    },
+  ],
+};
+
+export const obenanData = {
+  paraData: [
+    {
+      text: `Oben an der Volme ist eine spannende Region zum Erleben und Erholen – doch wie viel die Region tatsächlich zu bieten hat, wissen die Volmetaler selbst oft nicht. Das will der Freizeit- und Naherholungsbeauftragte ändern!`,
+    },
+
+    {
+      text: `Früher wurden die Bereiche Freizeit und Naherholung dezentral in den vier Kommunen durch zum Teil fachfremdes Personal bearbeitet. Doch seit September 2017 setzt sich Ralf Thebrath als Freizeit- und Naherholungsbeauftragter (kurz genannt „FuN-Manager“) dafür ein, dass die Region als Ganzes attraktiver wird.`,
+    },
+
+    {
+      text: `Wie das geht? Zum einen, indem bestehende Angebote qualifiziert, vernetzt und beworben werden. Und zum anderen, indem neue Angebote angestoßen werden und so die Vielfalt erweitert wird. Wichtig dabei: Zeigen, was man hat und was man kann – und das auf eine sympathische und authentische Art und Weise. So kamen auch Werbesprüche wie „Die Talsperre ist unsere Südsee!“ oder „Der Wanderweg ist unsere Straße!“ zustande.`,
+    },
+
+    {
+      text: `Grundlegendes Ziel des Projekts ist es, die Bedürfnisse der Bevölkerung nach Naherholung und Freizeitangeboten zu befriedigen. Gleichwohl werden auch Tagesbesucher aus dem Ruhrgebiet und dem Rheinland über die (neuen) Bahnverbindungen als auch über die gute Verkehrsanbindung an die Autobahn A45 erwartet. Langfristig geht es darum, sowohl die Attraktivität als auch die Lebens- und Standortqualität der Region durch eine professionelle Vermarktung nachhaltig zu steigern und das Image der Region zu verbessern.`,
+    },
+
+    {
+      text: `Die Kontaktdaten des Freizeit- und Naherholungsbeauftragten finden Sie hier.`,
+    },
+  ],
+
+  paraRight: [
+    {
+      head: "Status des Projekts:",
+      para: "Förderung bewilligt und in der Umsetzung",
+    },
+
+    {
+      head: "Projektträger:",
+      para: "Regionalentwicklung Oben an der Volme e.V.",
+    },
+
+    {
+      head: "Ort der Umsetzung:",
+      para: "Meinerzhagen, Kierspe, Halver, Schalksmühle",
+    },
+
+    {
+      head: "Geplanter Zeitraum:",
+      para: "2017-2021",
+    },
+
+    {
+      head: "Projektkosten:",
+      para: "ca. 348.700 € (65 % gefördert durch LEADER)",
+    },
+
+    {
+      head: "Handlungsfeld:",
+      para: "Freizeit & Tourismus",
+    },
+  ],
+};
+
+export const LeaderfreizeitTwo = {
+  data: [
+    {
+      id: 3,
+      title: "Notfalldosen Oben an der Volme",
+      titlebg: "#9369aa",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200",
+    },
+    {
+      id: 4,
+      title: "Naturerlebnis Volmetal",
+      titlebg: "#fcc300",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200",
+    },
+    {
+      id: 5,
+      title: "Digitales Dorfzentrum",
+      titlebg: "#31b7bc",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200",
+    },
+    {
+      id: 6,
+      title: "Nachhaltige Mobilität Volmetal",
+      titlebg: "#9369aa",
+      icon: FaAngleDown,
+      image:
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200",
+    },
+  ],
+  dataIcon: FaAngleDown,
+};
+
+export const baseFive = {
+  lineOne: " REGIONALE",
+  linetwo: "IN NRW",
+  backgroundImg: Seen,
+  lineOneCol: "#936aab",
+  linetwoCol: "#31b7bc",
+};
+
+export const dieRegionaleLorm = {
+  head: "Die REGIONALEN in NRW",
+  para: [
+    {
+      id: 1,
+      text: `Die Oben an der Volme-Kommunen hatten sich im Rahmen der REGIONALE 
+            2013 zusammengeschlossen und ein gemeinsames Konzept (Verlinkung auf 
+            das RIEHK im Downloadbereich) eingereicht, um sich an dem Strukturförder
+            programm zu beteiligen – mit Erfolg! Sie wurden mit dem dritten Stern ausge
+            zeichnet und konnten in die Umsetzung ihrer Projekte gehen.`,
+    },
+    {
+      id: 2,
+      text: `Ziel des 2011 erstellten Konzepts: Das obere Volmetal als eine lebendige Regi
+            on mit starken Zentren zukunftsfähig zu entwickeln. Dazu gehörten insbeson
+            dere die folgenden Zielsetzungen:.`,
+    },
+    {
+      id: 3,
+      text: `Allerdings bekommt man die Fördergelder nicht umsonst: Eingereichte Pro
+            jekte müssen einen Qualifi zierungsprozess durchlaufen und den aufgestell
+            ten Kriterien der jeweiligen REGIONALE entsprechen. Wird ein Projekt nicht 
+            nur mit dem ersten und zweiten, sondern sogar mit dem dritten Stern aus
+            gezeichnet, ist die Umsetzungsreife erreicht und die Förderung gesichert.`,
+    },
+    {
+      id: 4,
+      text: `Weiterführende Informationen zur REGIONALE fi nden Sie hier`,
+    },
+  ],
+};
+
+export const regionaleData = {
+  bgImage:
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200",
+
+  titleSection: {
+    title: "Die REGIONALE 2013",
+    bgColor: "#f5c400",
   },
-  {
-    id: 2,
-    title: "Kein Kind zurücklassen - von Anfang an!",
-    color: "#2fb8bd",
-    image:
-      "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1200",
+
+  topContent: {
+    bgColor: "#9a73b3",
+    para: [
+      {
+        id: 1,
+        text: `Die Oben an der Volme-Kommunen hatten sich im Rahmen der REGIONALE 2013 zusammengeschlossen und ein gemeinsames Konzept (Verlinkung auf das RIEHM im Downloadbereich) eingereicht, um sich an dem Strukturförderprogramm zu beteiligen – mit Erfolg! Sie wurden mit dem dritten Stern ausgezeichnet und konnten in die Umsetzung ihrer Projekte gehen.`,
+      },
+
+      {
+        id: 2,
+        text: `Ziel des 2011 erstellten Konzepts: Das obere Volmetal als eine lebendige Region mit starken Zentren zukunftsfähig zu entwickeln. Dazu gehörten insbesondere die folgenden Zielsetzungen:`,
+      },
+    ],
   },
-  {
-    id: 3,
-    title: "Notfalldosen Oben an der Volme",
-    color: "#936aab",
-    image:
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200",
+
+  listSection: {
+    bgColor: "#f5c400",
+    textColor: "#ffffff",
+
+    items: [
+      {
+        id: 1,
+        icon: MdOutlineKeyboardArrowRight,
+        text: "die Bewältigung des demografischen Wandels",
+      },
+
+      {
+        id: 2,
+        text: "Wahrung und Steigerung der Lebensqualität",
+      },
+
+      {
+        id: 3,
+        text: "Verbesserung der Mobilität",
+      },
+
+      {
+        id: 4,
+        text: "Nachhaltige Siedlungsentwicklung",
+      },
+
+      {
+        id: 5,
+        text: "Erwirtschaftung der Zukunftsfähigkeit der Region.",
+      },
+    ],
   },
-  {
-    id: 4,
-    title: "Naturerlebnis Volmetal",
-    color: "#e6b800",
-    image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200",
+
+  bottomContent: {
+    bgColor: "#9a73b3",
+    textColor: "#ffffff",
+
+    para: [
+      {
+        id: 1,
+        text: `Um diese Ziele zu erreichen, wurden damals elf Leitprojekte ausgewählt, die 
+            mittlerweile größtenteils umgesetzt worden sind. Diese hatten ihren Fokus vor 
+            allem im Bereich der Entwicklung der Zentren, zum Beispiel durch die Umge
+            staltung von Stadt- und Freiräumen. Es wurden darüber hinaus auch verbin
+            dende Projekte in das Konzept integriert wie beispielsweise die Reaktivierung 
+            der Volmetalbahn.`,
+      },
+      {
+        id: 2,
+        text: `Eine Auswahl der größten Projekte aus der REGIONALE 2013 fi nden Sie hier 
+            (Verlinkung auf die Projektübersicht mit der voreingestellten Filterfunktion, 
+            dass nur die REGIONALE-Projekte gezeigt werden).`,
+      },
+    ],
   },
-  {
-    id: 5,
-    title: "Digitales Dorfzentrum",
-    color: "#2fb8bd",
-    image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200",
-  },
-  {
-    id: 6,
-    title: "Nachhaltige Mobilität Volmetal",
-    color: "#936aab",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200",
-  },
-];
+};

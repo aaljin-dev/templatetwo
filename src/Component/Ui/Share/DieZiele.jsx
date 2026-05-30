@@ -1,6 +1,6 @@
 import React from "react";
-import { dieZiele } from "../../../mock";
-const DieZiele = () => {
+
+const DieZiele = ({ dieZiele }) => {
   return (
     <>
       <div>
