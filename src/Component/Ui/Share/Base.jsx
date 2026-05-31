@@ -22,7 +22,7 @@ const Base = ({ base }) => {
             </div>
             <div>
               <h1
-                style={{ backgroundColor: base.lineTwoCol || "#fcc305" }}
+                style={{ backgroundColor: base.linetwoCol || "#fcc305" }}
                 className=" inline-block mb-9 font-[950] tracking-[20px] text-[125px] leading-35 pl-5
               max-md:tracking-[1px] max-md:text-[50px] max-md:leading-20 title"
               >

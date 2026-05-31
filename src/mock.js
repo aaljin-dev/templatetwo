@@ -3,6 +3,8 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { BiSolidLike } from "react-icons/bi";
 import { FaAngleDown } from "react-icons/fa";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { BiSolidFilePdf } from "react-icons/bi";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 import bannnerOneImage from "./assets/images/Slider-scaled.jpg";
 import bannerImageOne from "./assets/images/banner1.png";
@@ -652,21 +654,25 @@ export const regionaleData = {
 
       {
         id: 2,
+        icon: MdOutlineKeyboardArrowRight,
         text: "Wahrung und Steigerung der Lebensqualität",
       },
 
       {
         id: 3,
+        icon: MdOutlineKeyboardArrowRight,
         text: "Verbesserung der Mobilität",
       },
 
       {
         id: 4,
+        icon: MdOutlineKeyboardArrowRight,
         text: "Nachhaltige Siedlungsentwicklung",
       },
 
       {
         id: 5,
+        icon: MdOutlineKeyboardArrowRight,
         text: "Erwirtschaftung der Zukunftsfähigkeit der Region.",
       },
     ],
@@ -694,4 +700,110 @@ export const regionaleData = {
       },
     ],
   },
+};
+
+export const regionaleTwoData = {
+  titleSection: {
+    title: "Die REGIONALE 2025",
+  },
+
+  contentSection: {
+    paragraphs: [
+      {
+        id: 1,
+        text: "Auch im Rahmen der REGIONALE 2025 möchten sich die Oben an der Volme-Kommunen wieder einbringen – und haben hierbei sogar Verstärkung bekommen: Die Gemeinde Herscheid ist seit 2019 Teil der Region Oben an der Volme!",
+      },
+      {
+        id: 2,
+        text: "Gemeinsam haben die fünf Kommunen im Laufe des Jahres 2019 Ideen für Projekte gesucht. Und das nicht im stillen Kämmerlein: Es wurden Bürger befragt, Workshops ausgerichtet, eine Ideenwerkstatt durchgeführt und Veranstaltungen organisiert.",
+      },
+      {
+        id: 3,
+        text: "Das Ergebnis? Ein mit bürgerschaftlicher Beteiligung erstelltes Konzept, das zeigt, wie sich Oben an der Volme in Zukunft nachhaltig, authentisch und digital aufstellen möchte. Mit diesem Konzept erhofft sich die Region, wieder den Qualifizierungsprozess starten zu können.",
+      },
+      {
+        id: 4,
+        text: "Alles über den bisherigen Prozess und die von Bürgern eingereichten Ideen finden Sie hier:",
+      },
+    ],
+  },
+
+  imageSection: {
+    image: "https://picsum.photos/800/600",
+    alt: "Regionale 2025",
+  },
+};
+
+export const baseSix = {
+  lineOne: " DOWNLOADS",
+  linetwo: "& LINKS",
+  backgroundImg: Seen,
+  lineOneCol: "#fcc305",
+  linetwoCol: "#936aaa",
+};
+
+export const loremipsum = {
+  head: "Lorem ipsum sit dolor ",
+  para: [
+    {
+      id: 1,
+      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+              nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+              wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+              lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iri-
+              ure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+              dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim
+              qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+              facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vo-
+              lutpat. Ut wisi enim ad minim veniam,`,
+    },
+  ],
+};
+
+export const newsletter = {
+  head: "Newsletter",
+  img: "https://picsum.photos/800/600",
+  letter: [
+    {
+      id: 1,
+      icon: BiSolidFilePdf,
+      text: "Newsletter April 2019",
+    },
+    {
+      id: 2,
+      icon: BiSolidFilePdf,
+      text: "Newsletter Februar 2019",
+    },
+    {
+      id: 3,
+      icon: BiSolidFilePdf,
+      text: "Newsletter Oktober 2019",
+    },
+  ],
+  button: [
+    {
+      id: 1,
+      icon: MdKeyboardArrowDown,
+      text: "Newsletter 2018",
+    },
+    {
+      id: 2,
+      icon: MdKeyboardArrowDown,
+      text: "Newsletter 2017",
+    },
+    {
+      id: 3,
+      icon: MdKeyboardArrowDown,
+      text: "Newsletter 2016",
+    },
+  ],
+  para: `Sie möchten gerne unseren Newsletter regelmäßig per E-Mail erhalten?
+        Dann melden Sie sich hier bitte an:`,
+
+  input: [
+    { id: 1, name: "Name" },
+    { id: 2, name: "Vorname" },
+    { id: 1, name: "E-Mail" },
+  ],
 };
