@@ -3,7 +3,7 @@ import React from "react";
 const Newsletter = ({ newsletter }) => {
   return (
     <>
-      <div className="font-Nunito ">
+      <div className="font-Nunito pb-50 max-md:pb-10">
         <div className="py-2 border-b border-gray-400 mt-15 mx-25 text-gray-500">
           <h1 className="text-4xl font-bold">{newsletter.head}</h1>
         </div>
@@ -20,10 +20,12 @@ const Newsletter = ({ newsletter }) => {
               {newsletter.letter.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <p className="flex items-center pb-3">
-                    <Icon className="text-[#936aab] w-10 h-10" />
-                    {item.text}
-                  </p>
+                  <div key={item.id}>
+                    <p className="flex items-center pb-3">
+                      <Icon className="text-[#936aab] w-10 h-10" />
+                      {item.text}
+                    </p>
+                  </div>
                 );
               })}
             </div>
@@ -31,9 +33,9 @@ const Newsletter = ({ newsletter }) => {
               {newsletter.button.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <div className="relative inline group">
+                  <div key={item.id} className="relative inline group">
                     {
-                      <>
+                      <div>
                         <button
                           className="bg-[#936aab] text-white w-[80%] max-md:w-full px-2 py-2 mt-3 font-medium 
                         flex items-center"
@@ -41,7 +43,7 @@ const Newsletter = ({ newsletter }) => {
                           <Icon />
                           <p className="pl-10">{item.text}</p>
                         </button>
-                      </>
+                      </div>
                     }
 
                     {/* <div
@@ -67,11 +69,47 @@ const Newsletter = ({ newsletter }) => {
           </div>
         </div>
         <div>
-          <div>
-            <h1>
+          <div className="ml-25 mt-15 max-md:ml-5 max-md:mt-5 ">
+            <h1 className="text-gray-600 text-xl w-[50%] max-md:w-[100%] max-md:mb-5">
               Sie möchten gerne unseren Newsletter regelmäßig per E-Mail
               erhalten? Dann melden Sie sich hier bitte an:
             </h1>
+            <div className="max-md:flex max-md:flex-col max-md:gap-5 pt-6 ">
+              {newsletter.input.map((item) => {
+                return (
+                  <input
+                    key={item.id}
+                    type="text"
+                    placeholder={item.name}
+                    className="border pt-5 w-[32%] mr-3 max-md:w-[95%]"
+                  />
+                );
+              })}
+              <button className="bg-[#575757] mt-5 hover:bg-blue-700 text-white font-semibold py-2 px-4 transition duration-200">
+                Click Me
+              </button>
+            </div>
+            <div className="pt-10">
+              <h1 className="text-gray-600 text-xl w-[50%] max-md:w-[100%] max-md:mb-5">
+                Sie möchten gerne vom Newsletter abmelden?
+              </h1>
+              <div className="pt-4">
+                <div className="flex justify-start items-center max-md:flex-col gap-8">
+                  <input
+                    type="text"
+                    placeholder="E-Mail"
+                    className="border pt-5 w-[32%]  max-md:w-[95%]"
+                  />
+                  <button className="bg-[#575757]  hover:bg-blue-700 text-white font-semibold py-2 px-4 transition duration-200">
+                    Click Me
+                  </button>
+                </div>
+                <div className="pt-2 flex gap-4">
+                  <input type="checkbox" className="w-4" />
+                  <p>vom Newsletter abmelden</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

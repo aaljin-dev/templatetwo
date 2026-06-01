@@ -41,6 +41,8 @@ import Nachhaltig from "./assets/images/Nachhaltig-mobil.jpg";
 
 import Seen from "./assets/images/Sauerland-Seen.jpg";
 
+import colordam from "./assets/images/colordam.png";
+
 export const baseOne = {
   lineOne: "DEINE",
   linetwo: "REGION",
@@ -804,6 +806,83 @@ export const newsletter = {
   input: [
     { id: 1, name: "Name" },
     { id: 2, name: "Vorname" },
-    { id: 1, name: "E-Mail" },
+    { id: 3, name: "E-Mail" },
+  ],
+};
+
+export const downloadsData = {
+  head: "Downloads",
+  para: `Wir haben für Sie wichtige Strategien und Konzepte zur
+          Region Oben an der Volme zum Download zusammengestellt:`,
+  img: colordam,
+  content: [
+    {
+      id: 1,
+      icon: BiSolidFilePdf,
+      title: "Sustainable Mobility Strategy for the Four Volme Municipalities",
+      date: "February 2019",
+      url: "#",
+    },
+    {
+      id: 2,
+      icon: BiSolidFilePdf,
+      title: "Regional Marketing Development Strategy",
+      date: "September 2018",
+      url: "#",
+    },
+    {
+      id: 3,
+      icon: BiSolidFilePdf,
+      title: "Regional Development Strategy Volme Region",
+      date: "April 2018",
+      url: "#",
+    },
+    {
+      id: 4,
+      icon: BiSolidFilePdf,
+      title: "Cultural Development Plan",
+      date: "May 2015",
+      url: "#",
+    },
+    {
+      id: 5,
+      icon: BiSolidFilePdf,
+      title: "Leisure and Tourism Concept",
+      date: "January 2014",
+      url: "#",
+    },
+    {
+      id: 6,
+      icon: BiSolidFilePdf,
+      title: "Regional Development and Action Framework",
+      date: "January 2011",
+      url: "#",
+    },
+  ],
+};
+
+export const baseseven = {
+  lineOne: "KONTAKT",
+  lineOneCol: "#fdc306",
+  backgroundImg: Seen,
+};
+
+export const loremLast = {
+  head: "Lorem ipsum sit dolor ",
+  bg: "#2fb8bd",
+  para: [
+    {
+      id: 1,
+      text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+            wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iri-
+            ure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+            dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim
+            qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+            facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vo-
+            lutpat. Ut wisi enim ad minim veniam,`,
+    },
   ],
 };

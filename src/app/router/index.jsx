@@ -7,6 +7,7 @@ import {
   baseFour,
   baseFive,
   baseSix,
+  baseseven,
 } from "../../mock";
 
 import Base from "../../Component/Ui/Share/Base";
@@ -18,6 +19,7 @@ import Projekte from "../../modules/ projekte/page";
 import Leader from "../../modules/leader/page";
 import Regionale from "../../modules/regionale/page";
 import Downloads from "../../modules/downloads/page";
+import Kontakt from "../../modules/kontakt/pages";
 
 export const router = createBrowserRouter([
   {
@@ -105,6 +107,21 @@ export const router = createBrowserRouter([
           <>
             <Base base={baseSix} />
             <Downloads />
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    path: "/kontakt",
+    element: <MainLayout />,
+    children: [
+      {
+        index: true,
+        element: (
+          <>
+            <Base base={baseseven} />
+            <Kontakt />
           </>
         ),
       },

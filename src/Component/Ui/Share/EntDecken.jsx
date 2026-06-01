@@ -4,6 +4,7 @@ const EntDecken = ({ entDecken }) => {
   return (
     <div>
       <div
+        style={{ backgroundColor: entDecken?.bg || "#8E6BA7" }}
         className="max-h-[740px] bg-[#8E6BA7] text-white flex w-[100%] gap-9 pt-15 pb-15 
       max-md:flex-col  max-md:py-5 max-md:gap-0"
       >
